@@ -4,119 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripAdvisor-clone</title>
-    <!-- Google Fonts -->
+    <title>TripAdvisor Clone</title>
+    <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-
-    <!-- My Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome cdn -->
+    <!-- FontAwesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--MyStyleSheet-->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="container">
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="navbar__logo">
-            <h1>Tripadvisor</h1>
+<body class="maincontainer">
+    <div class="content">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar__s1__logo">
+                <svg id="logo" width="50" height="40" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg"
+                    fill="none">
+                    <g id="logomark">
+                        <path fill="#071950"
+                            d="M14.3633 17.4522C14.2097 16.8379 14.8085 16.3034 15.4014 16.5255L20.084 18.2813C21.2367 18.7136 22 19.8159 22 21.047C21.9999 22.678 20.6779 24.0001 19.0469 24.0001H18.6309C17.0849 24 15.7374 22.948 15.3623 21.4483L14.3633 17.4522Z" />
+                        <path fill="#071950"
+                            d="M34.5986 16.5255C35.1915 16.3034 35.7903 16.8379 35.6367 17.4522L34.6377 21.4483C34.2626 22.948 32.9151 24 31.3691 24.0001H30.9531C29.3221 24.0001 28.0001 22.678 28 21.047C28 19.8159 28.7633 18.7136 29.916 18.2813L34.5986 16.5255Z" />
+                        <path fill="#071950"
+                            d="M41.5928 0.324304C43.1168 -0.65543 45.0547 0.734588 44.6152 2.49227L42.8604 9.50887C47.2764 14.0176 50 20.1904 50 27.0001V28.1417C50 34.6908 44.6907 40.0001 38.1416 40.0001C35.0982 40 32.1714 38.8297 29.9668 36.7315L25.002 32.0059L20.0322 36.7335C17.8277 38.8303 14.9018 40.0001 11.8594 40.0001C5.30967 40.0001 0 34.6904 0 28.1407V27.0001C1.69261e-05 19.9152 2.9474 13.5189 7.68262 8.96981L6.06348 2.49227C5.62408 0.734675 7.56097 -0.655146 9.08496 0.324304L14.958 4.09969C18.0315 2.75003 21.4281 2.00008 25 2.00008C28.7271 2.00008 32.2631 2.81695 35.4404 4.27938L41.5928 0.324304ZM25 10.0001C15.6112 10.0001 8.00003 17.6113 8 27.0001V28.1407C8 30.2721 9.72795 32.0001 11.8594 32.0001C12.8492 32.0001 13.8012 31.6197 14.5186 30.9376L19.4902 26.2091L25.001 32.004L30.5156 26.21L35.4814 30.9366C36.1987 31.6193 37.1514 32 38.1416 32.0001C40.2724 32.0001 42 30.2725 42 28.1417V27.0001C42 17.6113 34.3888 10.0001 25 10.0001Z"
+                            clip-rule="evenodd" fill-rule="evenodd" />
+                    </g>
+                </svg>
+            </div>
+            <div class="navbar__s2__menu">
+                <p class="navbar__s2__btn">Plan with AI</p>
+                <p>Discover</p>
+                <p>Review</p>
+                <p>More</p>
+            </div>
+
+            <div class="navbar__s3__menubtn">
+                <p>Signin</p>
+            </div>
         </div>
-        <div class="navbar__btn1">
-            <i class="fa-regular fa-comment" style="color: rgb(0, 0, 0);"></i>
-            <p>Plan with AI</p>
+
+        <!-- Section One -->
+        <div class="section__s1">
+            <div class="section__s1__title">
+                <h1>Where to?</h1>
+            </div>
+            <div class="section__s1__container">
+                <div class="section__s1__searchbox">
+                    <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
+                    <input type="text" placeholder="Places to go,things to do, hotels...">
+                </div>
+                <div class="section__s1__searchbtn">
+                    <button class="askai">Ask AI</button>
+                    <button class="search">Search</button>
+                </div>
+            </div>
         </div>
-        <div class="navbar__menu">
-            <p>Discover</p>
-            <p>Review</p>
-            <p>More</p>
+
+        <!-- Section Two -->
+        <div class="section__s2">
+            <div class="s2__container">
+                <img src="./images/travel.jpg" alt="">
+            </div>
+            <div class="s2__content">
+                <h1 class="s2__content__title">Find things to do for everything you're into</h1>
+                <p class="s2__content__desc">Browse 400,000+ experiences and book with us.</p>
+                <button>Book Now</button>
+            </div>
         </div>
-        <div class="navbar__btn2">
-            <button>Sign in</button>
+        <!-- Section Three -->
+        <div class="s3__interest">
+            <div class="s3__interest__container">
+                <h3 class="s3__interest__title">Find things to do by interest</h3>
+                <p>Whatever you're into, we’ve got it</p>
+            </div>
+            <div class="s3__interest__cards">
+                <div class="s3__interest__card1">
+                    <img src="./images/card1-outdoors.jpg" alt="Outdoors">
+                    <p>Outdoors</p>
+                </div>
+                <div class="s3__interest__card2">
+                    <img src="./images/card2-food.jpg" alt="Outdoors">
+                    <p>Food</p>
+                </div>
+                <div class="s3__interest__card2">
+                    <img src="./images/card3-culture.jpg" alt="Outdoors">
+                    <p>Culture</p>
+                </div>
+                <div class="s3__interest__card2">
+                    <img src="./images/card4-water.jpg" alt="Outdoors">
+                    <p>Water</p>
+                </div>
+            </div>
+        </div>
+        <!-- Adventure Card  -->
+        <div class="s4__adv">
+            <div class="s4__adv__container">
+                <h3 class="s4__adv__title">Outdoor adventures in New Delhi</h3>
+            </div>
+            <div class="s4__adv__cards">
+                <div class="s4__adv__card1">
+                    <img src="./images/advcard1-zipling.jpg" alt="">
+                    <p>E-O-D Adventure Park</p>
+                    <p>4.9 ⭐⭐⭐⭐⭐(4,272)</p>
+                    <p>Ziplining, zip cycling,tree-top activities</p>
+                </div>
+                <div class="s4__adv__card2">
+                    <img src="./images/advcard2-paddleboating.jpg" alt="">
+                    <p>Adventure activities at Sanjay Lake</p>
+                    <p>4.9 ⭐⭐⭐⭐⭐(4,272)</p>
+                    <p>Paddle boating and outdoor recreation</p>
+                </div>
+                <div class="s4__adv__card1">
+                    <img src="./images/advcard3-shootout.jpg" alt="">
+                    <p>Shootout Zone, Chhatarpur</p>
+                    <p>4.9 ⭐⭐⭐⭐⭐(4,272)</p>
+                    <p>Paintball</p>
+                </div>
+                <div class="s4__adv__card1">
+                    <img src="./images/advcard4-Mountaineering.jpg" alt="">
+                    <p>Indian Mountaineering Foundation</p>
+                    <p>4.9 ⭐⭐⭐⭐⭐(4,272)</p>
+                    <p>Rock climbing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Spots -->
+
+        <div class="s4__adv">
+            <div class="s4__adv__container">
+                <h3 class="s4__adv__title">Business districts and commercial hubs</h3>
+            </div>
+            <div class="s4__adv__cards">
+                <div class="s4__adv__card1">
+                    <img src="./images/JW Marriott Hotel.jpeg" alt="">
+                    <p>JW Marriott Hotel New Delhi Aerocity</p>
+                    <p>4.9 ⭐⭐⭐⭐⭐(14,342)</p>
+                    <p>from $200/night</p>
+                </div>
+                <div class="s4__adv__card2">
+                    <img src="./images/The Lalit New Delhi.jpeg" alt="">
+                    <p>The Lalit New Delhi</p>
+                    <p>4.7 ⭐⭐⭐⭐(9,262)</p>
+                    <p>from $230/night</p>
+                </div>
+                <div class="s4__adv__card1">
+                    <img src="./images/Novotel.jpeg" alt="">
+                    <p>NOVOTEL New Delhi City Centre</p>
+                    <p>4.5 ⭐⭐⭐⭐(6,036)</p>
+                    <p>from $180/night</p>
+                </div>
+                <div class="s4__adv__card1">
+                    <img src="./images/Fortune Park, East Delhi.webp" alt="">
+                    <p>Fortune Park, East Delhi</p>
+                    <p>4.4 ⭐⭐⭐⭐⭐(6,000)</p>
+                    <p>from $150/night</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Asian Cusines -->
+
+        <div class="s4__adv">
+            <div class="s4__adv__container">
+                <h3 class="s4__adv__title">Asian Cusines in New Delhi</h3>
+            </div>
+            <div class="s4__adv__cards">
+                <div class="s4__adv__card1">
+                    <img src="./images/Noya-chinese.webp" alt="">
+                    <p>Noya</p>
+                    <p>4.8 ⭐⭐⭐⭐⭐(2,123)</p>
+                    <p>Luxury Chinese dining near Connaught</p>
+                </div>
+                <div class="s4__adv__card2">
+                    <img src="./images/mount fuji-japanese.webp" alt="">
+                    <p>Mount fuji</p>
+                    <p>4.7 ⭐⭐⭐⭐(465)</p>
+                    <p>Japanese and Pan-Asian dishes</p>
+                </div>
+                <div class="s4__adv__card1">
+                    <img src="./images/Seoul Station Cafe-korean.webp" alt="">
+                    <p>Seoul Station Cafe</p>
+                    <p>4.9 ⭐⭐⭐⭐⭐(1,525)</p>
+                    <p>Casual Korean food</p>
+                </div>
+                <div class="s4__adv__card1">
+                    <img src="./images/TheSpiceRoute-Thai.webp" alt="">
+                    <p>The Spice Route</p>
+                    <p>4.3 ⭐⭐⭐⭐⭐(4,272)</p>
+                    <p>Thai, Vietnamese and Malaysian</p>
+                </div>
+            </div>
+        </div>
+        <!-- Award -->
+        <div class="awards">
+            <div class="s4__awards__container">
+                <div class="s4__awards__ls">
+                    <i class="fa-solid fa-award fa-5x" style="color: rgb(255, 212, 59);"></i>
+                    <h1>Travelers' Choice Awards Best of the Best</h1>
+                    <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+                    <button>See all winners</button>
+                </div>
+                <div class="s4__awards__rs">
+                    <img src="./images/award.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer__container">
+            <div class="footer__menu">
+                <div class="footer__menu__s1">
+                    <h4>About Travel Partner</h4>
+                    <p>About us</p>
+                    <p>Press</p>
+                    <p>Resources and Policies</p>
+                    <p>Careers</p>
+                    <p>Trust & Safety</p>
+                    <p>Contact us</p>
+                    <p>Blog</p>
+                </div>
+
+                <div class="footer__menu__s2">
+                    <h4>Explore</h4>
+                    <p>Things to Do</p>
+                    <p>Hotels</p>
+                    <p>Restaurants</p>
+                    <p>Crusies</p>
+                    <p>Write a Review</p>
+                    <p>Add a place</p>
+                    <p>Join</p>
+                    <p>Travellers Choice</p>
+                    <p>Help Centre</p>
+                    <p>Travel Stories</p>
+                </div>
+                <div class="footer__menu__s7">
+                    <div class="footer__menu__s3">
+                        <h4>Do Business with Us</h4>
+                        <p>Business Advantage</p>
+                        <p>Advertise with us</p>
+                    </div>
+
+                    <div class="footer__menu__s5">
+                        <h4>Get the App</h4>
+                        <p>iPhone App</p>
+                        <p>Android App</p>
+                    </div>
+                </div>
+                <div class="footer__menu__s6">
+                    <h4>Travel Partner Sites</h4>
+                    <p>Book tickets on
+                        <a href="https://www.makemytrip.com/">TravelPartner</a>
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Section One -->
-    <div class="sect-one">
-        <div class="sec-one__title">
-            <h1>Where to?</h1>
-        </div>
-        <div class="sec-one__cat">
-            <div class="sec-one__cat1">
-                <i class="fa-solid fa-magnifying-glass-location" style="color: rgb(0, 0, 0);"></i>
-                <p>Search All</p>
-            </div>
-
-            <div class="sec-one__cat2">
-                <i class="fa-regular fa-camera" style="color: rgb(0, 0, 0);"></i>
-                <p>Things to Do</p>
-            </div>
-
-            <div class="sec-one__cat3">
-                <i class="fa-solid fa-bed" style="color: rgb(0, 0, 0);"></i>
-                <p>Hotels</p>
-            </div>
-
-            <div class="sec-one__cat4">
-                <i class="fa-solid fa-utensils" style="color: rgb(0, 0, 0);"></i>
-                <p>Search All</p>
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-    <!-- SearchBox -->
-    <div class="main-container">
-        <div class="searchbox">
-            <div class="searchbox-s1">
-                <i class="fa-solid fa-magnifying-glass" style="color: rgb(0, 0, 0);"></i>
-                <input type="text" placeholder="Places to go, things to do, hotels...">
-            </div>
-            <div class="searchbox-s1__btn">
-                <button class="askai">Ask AI</button>
-                <button class="search">Search</button>
-            </div>
-        </div>
-    </div>
-    <!-- Hero Section -->
-    <div class="main-hero">
-        <div class="hero-s1">
-            <div class="hero-img">
-                <img src="./images/travel2.jpg" alt="travel">
-            </div>
-
-            <div class="hero-content">
-                <h1>Find things to do for everything you're into</h1>
-                <p>Browse 400,000 experiences and book with us</p>
-                <button>Book now</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Interest Card -->
-    <div class="card">
-        <div class="card-s1">
-            <h1 class="card-s1__title">Find things to do by interest</h1>
-            <p class="card-s1__desc">Whatever you're into, we’ve got it</p>
-        </div>
-
-        <div>
-
-        </div>
-
-
-    </div>
-
-
 
 </body>
 
