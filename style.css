@@ -30,7 +30,7 @@ body {
 
 .navbar__s2__menu {
     display: flex;
-    padding-left: 600px;
+    padding-left: 400px;
     gap: 20px;
     align-items: center;
     font-size: 18px;
