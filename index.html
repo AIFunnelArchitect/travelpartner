@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripAdvisor Clone</title>
+    <title>TravelPartner</title>
     <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,12 +43,17 @@
                 <p>Review</p>
                 <p>More</p>
             </div>
+            <div class="region">
+                <i class="fa-regular fa-heart" style="color: rgb(0, 0, 0);"></i>
+                <i class="fa-solid fa-globe" style="color: rgb(0, 0, 0);"></i>
+                <p>INR</p>
+            </div>
+
 
             <div class="navbar__s3__menubtn">
                 <p>Signin</p>
             </div>
         </div>
-
         <!-- Section One -->
         <div class="section__s1">
             <div class="section__s1__title">
@@ -65,7 +70,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Section Two -->
         <div class="section__s2">
             <div class="s2__container">
@@ -136,7 +140,6 @@
         </div>
 
         <!-- Business Spots -->
-
         <div class="s4__adv">
             <div class="s4__adv__container">
                 <h3 class="s4__adv__title">Business districts and commercial hubs</h3>
@@ -168,9 +171,7 @@
                 </div>
             </div>
         </div>
-
         <!-- Asian Cusines -->
-
         <div class="s4__adv">
             <div class="s4__adv__container">
                 <h3 class="s4__adv__title">Asian Cusines in New Delhi</h3>
@@ -202,70 +203,124 @@
                 </div>
             </div>
         </div>
-        <!-- Award -->
-        <div class="awards">
-            <div class="s4__awards__container">
-                <div class="s4__awards__ls">
-                    <i class="fa-solid fa-award fa-5x" style="color: rgb(255, 212, 59);"></i>
-                    <h1>Travelers' Choice Awards Best of the Best</h1>
-                    <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
-                    <button>See all winners</button>
-                </div>
-                <div class="s4__awards__rs">
-                    <img src="./images/award.jpg" alt="">
-                </div>
+    </div>
+
+    <!-- Award -->
+    <div class="awards">
+        <div class="s4__awards__container">
+            <div class="s4__awards__ls">
+                <i class="fa-solid fa-award fa-5x" style="color: rgb(255, 212, 59);"></i>
+                <h1>Travelers' Choice Awards Best of the Best</h1>
+                <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+                <button>See all winners</button>
             </div>
-        </div>
-        <!-- Footer -->
-        <div class="footer__container">
-            <div class="footer__menu">
-                <div class="footer__menu__s1">
-                    <h4>About Travel Partner</h4>
-                    <p>About us</p>
-                    <p>Press</p>
-                    <p>Resources and Policies</p>
-                    <p>Careers</p>
-                    <p>Trust & Safety</p>
-                    <p>Contact us</p>
-                    <p>Blog</p>
-                </div>
-
-                <div class="footer__menu__s2">
-                    <h4>Explore</h4>
-                    <p>Things to Do</p>
-                    <p>Hotels</p>
-                    <p>Restaurants</p>
-                    <p>Crusies</p>
-                    <p>Write a Review</p>
-                    <p>Add a place</p>
-                    <p>Join</p>
-                    <p>Travellers Choice</p>
-                    <p>Help Centre</p>
-                    <p>Travel Stories</p>
-                </div>
-                <div class="footer__menu__s7">
-                    <div class="footer__menu__s3">
-                        <h4>Do Business with Us</h4>
-                        <p>Business Advantage</p>
-                        <p>Advertise with us</p>
-                    </div>
-
-                    <div class="footer__menu__s5">
-                        <h4>Get the App</h4>
-                        <p>iPhone App</p>
-                        <p>Android App</p>
-                    </div>
-                </div>
-                <div class="footer__menu__s6">
-                    <h4>Travel Partner Sites</h4>
-                    <p>Book tickets on
-                        <a href="https://www.makemytrip.com/">TravelPartner</a>
-                    </p>
-                </div>
+            <div class="s4__awards__rs">
+                <img src="./images/award.jpg" alt="">
             </div>
-
         </div>
     </div>
+
+
+    <!-- Footer -->
+    <div class="footer__container">
+        <div class="footer__menu">
+            <div class="footer__menu__s1">
+                <h4>About Travel Partner</h4>
+                <p>About us</p>
+                <p>Press</p>
+                <p>Resources and Policies</p>
+                <p>Careers</p>
+                <p>Trust & Safety</p>
+                <p>Contact us</p>
+                <p>Blog</p>
+            </div>
+
+            <div class="footer__menu__s2">
+                <h4>Explore</h4>
+                <p>Things to Do</p>
+                <p>Hotels</p>
+                <p>Restaurants</p>
+                <p>Crusies</p>
+                <p>Write a Review</p>
+                <p>Add a place</p>
+                <p>Join</p>
+                <p>Travellers Choice</p>
+                <p>Help Centre</p>
+                <p>Travel Stories</p>
+            </div>
+            <div class="footer__menu__s7">
+                <div class="footer__menu__s3">
+                    <h4>Do Business with Us</h4>
+                    <p>Business Advantage</p>
+                    <p>Advertise with us</p>
+                </div>
+
+                <div class="footer__menu__s5">
+                    <h4>Get the App</h4>
+                    <p>iPhone App</p>
+                    <p>Android App</p>
+                </div>
+            </div>
+            <div class="footer__menu__s6">
+                <h4>Travel Partner Sites</h4>
+                <p>Book tickets on
+                    <a href="#">TravelPartner</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Navbar -->
+    <div class="footer__nav">
+        <div class="footer__nav__main">
+            <div class="footer__nav__s5">
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy and Cookie Statement</a>
+                <a href="#">How the site works</a>
+                <a href="#">Contact us</a>
+                <a href="#">Accessiblity Statement</a>
+            </div>
+            <div class="footer__nav__rs">
+                <div class="footer__dropdown">
+                    <div class="currency">
+                        <select name="currency" id="currency">
+                            <option value="INR">INR</option>
+                            <option value="USD">$ US Dollor</option>
+                            <option value="Pound">£ British Pound</option>
+                            <option value="Euro">€ Euros</option>
+                            <option value="$">$Canadian Dollor</option>
+                            <option value="$">$Australian Dollor</option>
+                            <option value="AED">UAE Dhirams</option>
+                        </select>
+                    </div>
+                    <div class="country">
+                        <select name="country" id="country">
+                            <option value="India">India</option>
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                            <option value="UAE">UAE</option>
+                            <option value="Mexico">Mexico</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <a href="#"><i class="fa-brands fa-facebook-f fa-1x" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-1x" style="color: #000000;"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-1x" style="color: rgb(0, 0, 0);"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube fa-1x" style="color: rgb(0, 0, 0);"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok fa-1x" style="color: rgb(0, 0, 0);"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest fa-1x" style="color: rgb(0, 0, 0);"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <p>© 2026 TravelPartner | All Rights Reserved</p>
+        </div>
+    </div>
+
 
 </body>
 

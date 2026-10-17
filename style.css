@@ -8,12 +8,12 @@ body {
 }
 
 .maincontainer {
-    padding-left: 75px;
-    padding-right: 75px;
+    width: 100%;
 }
 
-.content{
-    width: 100%;
+.content {
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .navbar {
@@ -21,6 +21,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
 }
 
 .navbar__s1__logo {
@@ -29,11 +30,16 @@ body {
 
 .navbar__s2__menu {
     display: flex;
-    padding-left: 100px;
-    justify-content: space-evenly;
+    padding-left: 600px;
     gap: 20px;
     align-items: center;
     font-size: 18px;
+}
+
+.region{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .navbar__s2__btn {
@@ -241,10 +247,11 @@ body {
     border-radius: 15px;
 }
 
-.awards{
+.awards {
     padding-top: 50px;
     width: 100%;
 }
+
 .s4__awards__container {
     background-color: black;
     display: flex;
@@ -288,24 +295,104 @@ body {
     padding: 20px;
     font-size: 18px;
 }
-.footer__container{
+
+.footer__container {
     padding-top: 75px;
-    padding-left: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
     background-color: #F7F7F7;
 }
 
-.footer__menu{
+.footer__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     line-height: 1.9;
+    font-size: 14px;
 }
 
-.footer__menu__s7{
+.footer__menu__s7 {
     display: flex;
     flex-direction: column;
 }
 
-.footer__menu__s5{
-padding-top: 30px;
+.footer__menu__s5 {
+    padding-top: 30px;
+}
+
+.footer__nav {
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+    background-color: #F7F7F7;
+}
+
+.footer__nav__main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+.footer__nav__s5 {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__nav__s5 a {
+    color: black;
+}
+
+.footer__nav__rs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.currency {
+    font-size: 20px;
+    width: 100%;
+}
+
+.currency select {
+    border: solid black 2px;
+    border-radius: 10px;
+    width: fit-content%;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.country select {
+    border: solid black 2px;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 75px;
+    padding-top: 10px;
+    border-top: solid black 1px;
 }
