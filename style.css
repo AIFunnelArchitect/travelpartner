@@ -369,7 +369,7 @@ body {
 .currency select {
     border: solid black 2px;
     border-radius: 10px;
-    width: fit-content%;
+    width: fit-content;
     font-size: 16px;
     padding: 5px;
 }
